@@ -12,8 +12,4 @@ struct Paginacion: Codable {
     let pagina, totalPaginas, totalRegistros, totalRegistrosPorPagina: Int
 }
 
-enum CodigoCategoria: String, Codable {
-    case c = "C"
-    case ma = "MA"
-    case tl = "TL"
-}
+

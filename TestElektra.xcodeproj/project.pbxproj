@@ -11,13 +11,19 @@
 		9014BC162C8E0F3B00F097D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC152C8E0F3B00F097D2 /* ContentView.swift */; };
 		9014BC182C8E0F3C00F097D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9014BC172C8E0F3C00F097D2 /* Assets.xcassets */; };
 		9014BC1B2C8E0F3C00F097D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9014BC1A2C8E0F3C00F097D2 /* Preview Assets.xcassets */; };
-		9014BC232C8E124500F097D2 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC222C8E124500F097D2 /* ItemModel.swift */; };
 		9014BC252C8E127400F097D2 /* ItemsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC242C8E127400F097D2 /* ItemsListModel.swift */; };
 		9014BC272C8E12AC00F097D2 /* ResultadoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC262C8E12AC00F097D2 /* ResultadoModel.swift */; };
 		9014BC292C8E12BE00F097D2 /* PaginacionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC282C8E12BE00F097D2 /* PaginacionModel.swift */; };
 		9014BC2B2C8E12D000F097D2 /* ProductoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC2A2C8E12D000F097D2 /* ProductoModel.swift */; };
 		9014BC2D2C8E12E100F097D2 /* AbonoSemanaleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC2C2C8E12E100F097D2 /* AbonoSemanaleModel.swift */; };
 		9014BC302C8E159100F097D2 /* ErrorCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC2F2C8E159100F097D2 /* ErrorCases.swift */; };
+		9014BC332C8E161800F097D2 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC322C8E161800F097D2 /* WebService.swift */; };
+		9014BC362C8E17C000F097D2 /* ItemsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC352C8E17C000F097D2 /* ItemsListViewModel.swift */; };
+		9014BC3A2C8E203000F097D2 /* ItemsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC392C8E203000F097D2 /* ItemsListView.swift */; };
+		9014BC3D2C8E23E700F097D2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9014BC3C2C8E23E700F097D2 /* Kingfisher */; };
+		9014BC3F2C8E24E100F097D2 /* ItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC3E2C8E24E100F097D2 /* ItemDetailsView.swift */; };
+		9014BC412C8E257B00F097D2 /* ItemRowListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9014BC402C8E257B00F097D2 /* ItemRowListView.swift */; };
+		9014BC442C8E7A8500F097D2 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 9014BC432C8E7A8500F097D2 /* Shimmer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,13 +32,18 @@
 		9014BC152C8E0F3B00F097D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9014BC172C8E0F3C00F097D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9014BC1A2C8E0F3C00F097D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9014BC222C8E124500F097D2 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		9014BC242C8E127400F097D2 /* ItemsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListModel.swift; sourceTree = "<group>"; };
 		9014BC262C8E12AC00F097D2 /* ResultadoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoModel.swift; sourceTree = "<group>"; };
 		9014BC282C8E12BE00F097D2 /* PaginacionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginacionModel.swift; sourceTree = "<group>"; };
 		9014BC2A2C8E12D000F097D2 /* ProductoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoModel.swift; sourceTree = "<group>"; };
 		9014BC2C2C8E12E100F097D2 /* AbonoSemanaleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbonoSemanaleModel.swift; sourceTree = "<group>"; };
 		9014BC2F2C8E159100F097D2 /* ErrorCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCases.swift; sourceTree = "<group>"; };
+		9014BC322C8E161800F097D2 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		9014BC352C8E17C000F097D2 /* ItemsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListViewModel.swift; sourceTree = "<group>"; };
+		9014BC372C8E1AC500F097D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9014BC392C8E203000F097D2 /* ItemsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListView.swift; sourceTree = "<group>"; };
+		9014BC3E2C8E24E100F097D2 /* ItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsView.swift; sourceTree = "<group>"; };
+		9014BC402C8E257B00F097D2 /* ItemRowListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9014BC442C8E7A8500F097D2 /* Shimmer in Frameworks */,
+				9014BC3D2C8E23E700F097D2 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,10 +78,13 @@
 		9014BC122C8E0F3B00F097D2 /* TestElektra */ = {
 			isa = PBXGroup;
 			children = (
-				9014BC2E2C8E158800F097D2 /* Error */,
-				9014BC212C8E123A00F097D2 /* Models */,
+				9014BC372C8E1AC500F097D2 /* Info.plist */,
 				9014BC132C8E0F3B00F097D2 /* TestElektraApp.swift */,
 				9014BC152C8E0F3B00F097D2 /* ContentView.swift */,
+				9014BC212C8E123A00F097D2 /* Models */,
+				9014BC382C8E202000F097D2 /* Views */,
+				9014BC2E2C8E158800F097D2 /* Error */,
+				9014BC312C8E160900F097D2 /* WebService */,
 				9014BC172C8E0F3C00F097D2 /* Assets.xcassets */,
 				9014BC192C8E0F3C00F097D2 /* Preview Content */,
 			);
@@ -86,8 +102,7 @@
 		9014BC212C8E123A00F097D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9014BC222C8E124500F097D2 /* ItemModel.swift */,
-				9014BC242C8E127400F097D2 /* ItemsListModel.swift */,
+				9014BC342C8E17B100F097D2 /* ItemsList */,
 				9014BC262C8E12AC00F097D2 /* ResultadoModel.swift */,
 				9014BC282C8E12BE00F097D2 /* PaginacionModel.swift */,
 				9014BC2A2C8E12D000F097D2 /* ProductoModel.swift */,
@@ -102,6 +117,33 @@
 				9014BC2F2C8E159100F097D2 /* ErrorCases.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		9014BC312C8E160900F097D2 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				9014BC322C8E161800F097D2 /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		9014BC342C8E17B100F097D2 /* ItemsList */ = {
+			isa = PBXGroup;
+			children = (
+				9014BC242C8E127400F097D2 /* ItemsListModel.swift */,
+				9014BC352C8E17C000F097D2 /* ItemsListViewModel.swift */,
+			);
+			path = ItemsList;
+			sourceTree = "<group>";
+		};
+		9014BC382C8E202000F097D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9014BC392C8E203000F097D2 /* ItemsListView.swift */,
+				9014BC3E2C8E24E100F097D2 /* ItemDetailsView.swift */,
+				9014BC402C8E257B00F097D2 /* ItemRowListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +162,10 @@
 			dependencies = (
 			);
 			name = TestElektra;
+			packageProductDependencies = (
+				9014BC3C2C8E23E700F097D2 /* Kingfisher */,
+				9014BC432C8E7A8500F097D2 /* Shimmer */,
+			);
 			productName = TestElektra;
 			productReference = 9014BC102C8E0F3B00F097D2 /* TestElektra.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +194,10 @@
 				Base,
 			);
 			mainGroup = 9014BC072C8E0F3B00F097D2;
+			packageReferences = (
+				9014BC3B2C8E23E700F097D2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9014BC422C8E7A8500F097D2 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
+			);
 			productRefGroup = 9014BC112C8E0F3B00F097D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -174,15 +224,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9014BC3F2C8E24E100F097D2 /* ItemDetailsView.swift in Sources */,
 				9014BC292C8E12BE00F097D2 /* PaginacionModel.swift in Sources */,
 				9014BC2D2C8E12E100F097D2 /* AbonoSemanaleModel.swift in Sources */,
+				9014BC412C8E257B00F097D2 /* ItemRowListView.swift in Sources */,
 				9014BC2B2C8E12D000F097D2 /* ProductoModel.swift in Sources */,
-				9014BC232C8E124500F097D2 /* ItemModel.swift in Sources */,
 				9014BC302C8E159100F097D2 /* ErrorCases.swift in Sources */,
 				9014BC162C8E0F3B00F097D2 /* ContentView.swift in Sources */,
 				9014BC252C8E127400F097D2 /* ItemsListModel.swift in Sources */,
 				9014BC142C8E0F3B00F097D2 /* TestElektraApp.swift in Sources */,
+				9014BC332C8E161800F097D2 /* WebService.swift in Sources */,
+				9014BC3A2C8E203000F097D2 /* ItemsListView.swift in Sources */,
 				9014BC272C8E12AC00F097D2 /* ResultadoModel.swift in Sources */,
+				9014BC362C8E17C000F097D2 /* ItemsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +373,7 @@
 				DEVELOPMENT_TEAM = 485WG7JVGP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestElektra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -348,6 +403,7 @@
 				DEVELOPMENT_TEAM = 485WG7JVGP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestElektra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -388,6 +444,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9014BC3B2C8E23E700F097D2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
+		9014BC422C8E7A8500F097D2 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markiv/SwiftUI-Shimmer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9014BC3C2C8E23E700F097D2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9014BC3B2C8E23E700F097D2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		9014BC432C8E7A8500F097D2 /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9014BC422C8E7A8500F097D2 /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
+			productName = Shimmer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9014BC082C8E0F3B00F097D2 /* Project object */;
 }

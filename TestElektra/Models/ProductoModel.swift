@@ -24,3 +24,9 @@ struct Producto: Codable {
     let descuento: Bool?
     let precioCredito, montoDescuento: Double?
 }
+
+enum CodigoCategoria: String, Codable {
+    case c = "C"
+    case ma = "MA"
+    case tl = "TL"
+}
