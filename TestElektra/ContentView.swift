@@ -12,9 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             ItemDetailsView(selectedItem: $selectedItem)
-//                .padding()
         }
-        
     }
 }
 

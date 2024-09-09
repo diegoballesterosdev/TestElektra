@@ -8,21 +8,21 @@
 import SwiftUI
 import Kingfisher
 
+/// `ItemDetailsView` es una vista que muestra los detalles de un producto seleccionado.
 struct ItemDetailsView: View {
-    @State private var viewModel = ItemsListViewModel()
-    @Binding var selectedItem: Producto?
-    //    @Binding var producto: Producto?
+    @State private var viewModel = ItemsListViewModel() // `viewModel` es un objeto `ItemsListViewModel` que contiene la lógica de la vista.
+    @Binding var selectedItem: Producto? // `selectedItem` es el producto seleccionado que se muestra en la vista.
     
     var body: some View {
         
-        if selectedItem != nil {
+        if selectedItem != nil { // Si hay un producto seleccionado, muestra los detalles del producto
             GeometryReader { geometry in
                 ZStack {
                     ScrollView {
                         VStack {
                             VStack {
                                 HStack {
-                                    Text("SKU: \(selectedItem?.sku ?? "N/A")")
+                                    Text("SKU: \(selectedItem?.sku ?? "N/A")") // Muestra el SKU del producto.
                                         .font(.subheadline)
                                         .opacity(0.3)
                                     
@@ -31,18 +31,17 @@ struct ItemDetailsView: View {
                                 }
                                 
                                 HStack {
-                                    Text(selectedItem?.nombre ?? "")
+                                    Text(selectedItem?.nombre ?? "") // Muestra el nombre del producto.
                                         .font(.title)
                                         .fontWeight(.bold)
                                     
                                     Spacer()
                                 }
-//                                .frame(height: 50)
                                 
                                 HStack {
                                     Text("Categoría: ")
                                         .fontWeight(.semibold)
-                                    Text("\(selectedItem?.codigoCategoria?.rawValue ?? "N/A")")
+                                    Text("\(selectedItem?.codigoCategoria?.rawValue ?? "N/A")")  // Muestra la categoría del producto.
                                     Spacer()
                                 }
                             }
@@ -50,16 +49,13 @@ struct ItemDetailsView: View {
                             .padding(.top)
                             
                             TabView {
-                                //                        HStack {
-                                if let urlImagenes = selectedItem?.urlImagenes {
+                                if let urlImagenes = selectedItem?.urlImagenes { // Muestra las imágenes del producto.
                                     ForEach(urlImagenes, id: \.self) { urlImage in
                                         KFImage(URL(string: urlImage))
                                             .resizable()
                                             .scaledToFit()
                                             .padding(60)
                                             .frame(width: geometry.size.width)
-                                        
-                                        
                                     }
                                 }
                             }
@@ -71,13 +67,12 @@ struct ItemDetailsView: View {
                                 .fill(.white)
                                 .shadow(color: .black.opacity(0.2), radius: 10, x: 0, y: 10))
                             
-                            
-                            
                             VStack {
                                 HStack {
                                     Text("Pago de contado")
                                         .font(.title3)
                                     Spacer()
+                                    // Muestra el pago de contado del producto.
                                     Text("$" + formatNumber(selectedItem?.precioRegular ?? 0))
                                         .strikethrough(selectedItem?.descuento ?? false)
                                         .opacity(selectedItem?.descuento ?? false ? 0.6 : 1)
@@ -88,7 +83,7 @@ struct ItemDetailsView: View {
                                 .padding(.horizontal)
                                 .padding(.vertical)
                                 
-                                if selectedItem?.descuento ?? false {
+                                if selectedItem?.descuento ?? false { // Verifica si el producto tiene un descuento.
                                     HStack {
                                         Label("Promoción", systemImage: "tag.fill")
                                             .foregroundStyle(.white)
@@ -100,7 +95,7 @@ struct ItemDetailsView: View {
                                             }
                                         
                                         Spacer()
-                                        Text("$" + formatNumber(Int(selectedItem?.precioFinal ?? 0)))
+                                        Text("$" + formatNumber(Int(selectedItem?.precioFinal ?? 0))) // Muestra el precio con descuento.
                                             .fontWeight(.heavy)
                                             .font(.title)
                                         
@@ -110,7 +105,7 @@ struct ItemDetailsView: View {
                                     
                                 }
                                 
-                                if selectedItem?.disponibleCredito ?? false {
+                                if selectedItem?.disponibleCredito ?? false { // Verifica si el producto está disponible a crédito.
                                     
                                     HStack {
                                         Label("Disponible con crédito", systemImage: "checkmark.seal.fill")
@@ -120,7 +115,7 @@ struct ItemDetailsView: View {
                                             .background {
                                                 RoundedRectangle(cornerRadius: 5)
                                                     .fill(.orange)
-                                        }
+                                            }
                                         Spacer()
                                     }
                                     .padding(.horizontal)
@@ -136,6 +131,7 @@ struct ItemDetailsView: View {
                                     Spacer()
                                     
                                     VStack(alignment: .trailing) {
+                                        // Muestra el pago semanal principal del producto.
                                         Text("$" + formatNumber(Int(selectedItem?.pagoSemanalPrincipal ?? 0)))
                                             .fontWeight(.bold)
                                             .font(.title3)
@@ -143,21 +139,12 @@ struct ItemDetailsView: View {
                                             .fontWeight(.light)
                                             .opacity(0.6)
                                     }
-                                    
-                                    
                                 }
                                 .padding()
-                                
-                                
                             }
                             .background(.white)
                             .padding(.top, 30)
-                            
-                            
-                            
                             Spacer()
-                            
-                            
                         }
                         .frame(width: geometry.size.width, height: geometry.size.height)
                         HStack {
@@ -173,7 +160,7 @@ struct ItemDetailsView: View {
                             Spacer()
                             
                             NavigationLink {
-                                ItemsListView(selectedItem: $selectedItem)
+                                ItemsListView(selectedItem: $selectedItem) // Agrega un botón para navegar a la lista de productos.
                             } label: {
                                 Image(systemName: "mail.and.text.magnifyingglass")
                                     .resizable()
@@ -191,7 +178,7 @@ struct ItemDetailsView: View {
                 }
             }
             
-        } else {
+        } else { // Si no hay un producto seleccionado, muestra un prompt para navegar a la lista de productos
             ZStack {
                 VStack {
                     Image(systemName: "magnifyingglass")
@@ -203,7 +190,7 @@ struct ItemDetailsView: View {
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.center)
                     
-                    NavigationLink {
+                    NavigationLink { // NavigationLink para navegar a la lista de productos.
                         ItemsListView(selectedItem: $selectedItem)
                     } label: {
                         Label("Ver lista de productos", systemImage: "mail.and.text.magnifyingglass")
@@ -220,18 +207,19 @@ struct ItemDetailsView: View {
         }
     }
     
+    /// Formatea un número entero en un formato de moneda.
     func formatNumber(_ value: Int) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
-        formatter.locale = Locale(identifier: "en_US") // Use "en_US" or "es_ES" as needed
+        formatter.locale = Locale(identifier: "en_US")
         
-        formatter.minimumFractionDigits = 0 // No decimal places for Int
-        formatter.maximumFractionDigits = 0 // No decimal places for Int
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 0
         
         if let formattedNumber = formatter.string(from: NSNumber(value: value)) {
             return formattedNumber
         } else {
-            return "\(value)" // fallback
+            return "\(value)"
         }
     }
 }
